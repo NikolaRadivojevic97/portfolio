@@ -14,7 +14,7 @@ export class NavComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    if(window.location.href.toString()==='https://nikolaradivojevic97.github.io/portfolio/about' || window.location.href.toString()==='http://localhost:4200'){
+    if(window.location.href.toString()==='https://nikolaradivojevic97.github.io/portfolio/about' || window.location.href.toString()==='https://nikolaradivojevic97.github.io/portfolio'){
       this.about=true;
       this.projects=false;
       this.education=false;
@@ -39,7 +39,7 @@ export class NavComponent implements OnInit {
       this.education=false;
       this.contact=true;
     }else{
-      if(window.location.href.substring(0,window.location.href.toString().lastIndexOf("/"))==='https://nikolaradivojevic97.github.io/portfolio/'){
+      if(window.location.href.substring(0,window.location.href.toString().lastIndexOf("/"))==='https://nikolaradivojevic97.github.io/portfolio'){
         this.about=true;
         this.projects=false;
         this.education=false;
