@@ -14,32 +14,32 @@ export class NavComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    if(window.location.href.toString()==='http://localhost:4200/about' || window.location.href.toString()==='http://localhost:4200'){
+    if(window.location.href.toString()==='https://nikolaradivojevic97.github.io/portfolio/about' || window.location.href.toString()==='http://localhost:4200'){
       this.about=true;
       this.projects=false;
       this.education=false;
       this.contact=false;
     }
-    else{if(window.location.href.toString()==='http://localhost:4200/resume'){
+    else{if(window.location.href.toString()==='https://nikolaradivojevic97.github.io/portfolio/resume'){
       this.about=false;
       this.projects=true;
       this.education=false;
       this.contact=false;
     }else{
-    if(window.location.href.toString()==='http://localhost:4200/services'){
+    if(window.location.href.toString()==='https://nikolaradivojevic97.github.io/portfolio/services'){
       this.about=false;
       this.projects=false;
       this.education=true;
       this.contact=false;
     }
     else{
-    if(window.location.href.toString()==='http://localhost:4200/contact'){
+    if(window.location.href.toString()==='https://nikolaradivojevic97.github.io/portfolio/contact'){
       this.about=false;
       this.projects=false;
       this.education=false;
       this.contact=true;
     }else{
-      if(window.location.href.substring(0,window.location.href.toString().lastIndexOf("/"))==='http://localhost:4200'){
+      if(window.location.href.substring(0,window.location.href.toString().lastIndexOf("/"))==='https://nikolaradivojevic97.github.io/portfolio/'){
         this.about=true;
         this.projects=false;
         this.education=false;
